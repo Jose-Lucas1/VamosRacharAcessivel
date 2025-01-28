@@ -13,6 +13,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import androidx.appcompat.widget.Toolbar
 import java.util.*
 import kotlin.math.ceil
 
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() , TextWatcher, TextToSpeech.OnInitListe
         edtConta.addTextChangedListener(this)
         // Initialize TTS engine
         tts = TextToSpeech(this, this)
+
 
         val textWatcher = object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {

@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <!--android:id="@+id/edtConta2 -->
+
     <TextView
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
@@ -25,58 +26,59 @@
         android:ems="10"
         android:hint="numero de pessoas"
         android:inputType="number"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="@+id/valorDaConta"
         app:layout_constraintHorizontal_bias="0.261"
         app:layout_constraintStart_toStartOf="@+id/valorDaConta"
         app:layout_constraintTop_toBottomOf="@+id/valorDaConta" />
-
+    <!--asdf-->
     <TextView
-        android:id="@+id/valorDistribuido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="R$ 0.00"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/btFalar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/numDePessoas" />
+    android:id="@+id/valorDistribuido"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="64dp"
+    android:text="R$ 0.00"
+    android:textSize="24sp"
+    app:layout_constraintBottom_toTopOf="@+id/btFalar"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/numDePessoas" />
 
-    <Button
-        android:id="@+id/btFalar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="50dp"
-        android:onClick="clickFalar"
-        android:text="Falar"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/valorDaConta" />
+<Button
+    android:id="@+id/btFalar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="128dp"
+    android:layout_marginEnd="50dp"
+    android:onClick="clickFalar"
+    android:text="Falar"
+    app:layout_constraintEnd_toStartOf="@+id/button4"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/valorDaConta" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="83dp"
-        android:clickable="true"
-        android:importantForAccessibility="no"
-        android:onClick="clickShare"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
-        app:srcCompat="?attr/actionModeShareDrawable" />
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/floatingActionButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="84dp"
+    android:layout_marginEnd="70dp"
+    android:layout_marginBottom="83dp"
+    android:clickable="true"
+    android:importantForAccessibility="no"
+    android:onClick="clickShare"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/button4"
+    app:srcCompat="?attr/actionModeShareDrawable" />
 
-    <!--android:id="@+id/edtConta"-->
+<!--android:id="@+id/edtConta"-->
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="128dp"
-        android:contentDescription="Compre suas cartas Pokemon"
+        android:contentDescription="Dividir valor"
         android:onClick="clickComprar"
         android:text="Dividir valor"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,6 +93,7 @@
         android:ems="10"
         android:hint="valor da conta"
         android:inputType="number"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
